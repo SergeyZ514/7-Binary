@@ -1,0 +1,38 @@
+.footer {
+   text-align: center;
+   background-color: #3c3c3c;
+   padding: 48px 0;
+   &__logo {
+      margin-bottom: 38px;
+   }
+
+   &__links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 29px;
+   }
+
+   &__link {
+      margin-right: 17px;
+      &:last-child {
+         margin-right: 0;
+      }
+      a {
+         font-size: 14px;
+
+         color: rgb(164, 164, 164);
+         line-height: 17px;
+         &:hover {
+            color: #ffffff;
+         }
+      }
+   }
+
+   &__copyright {
+      font-size: 14px;
+      font-family: 'Myriad Pro';
+      color: rgb(108, 108, 108);
+      line-height: 17px;
+   }
+}

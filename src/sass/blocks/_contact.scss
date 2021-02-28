@@ -1,0 +1,136 @@
+.contact {
+   padding: 173px 0 80px 0;
+   background-color: #fff;
+   text-align: center;
+   &__title {
+   }
+
+   &__divider {
+      margin: 40px auto 118px auto;
+   }
+
+   &__row {
+      display: grid;
+      grid-template-columns: 400px 440px;
+      grid-template-rows: auto;
+      column-gap: 64px;
+      justify-content: center;
+   }
+}
+
+.feedback-form {
+   padding-right: 10px;
+   display: grid;
+   justify-content: start;
+   grid-template-columns: repeat(2, 161px);
+   grid-template-rows: 65px auto 47px;
+   column-gap: 60px;
+   row-gap: 20px;
+
+   &__label {
+      display: block;
+      font-size: 14px;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 17px;
+      text-align: left;
+      margin-bottom: 15px;
+      letter-spacing: 0.06em;
+   }
+   &__input,
+   &__textarea {
+      border-top: 1px solid #000000;
+      background-color: #f8f7f7;
+      &:focus {
+         border-top: 1px solid blue;
+      }
+   }
+   &__text {
+      grid-column: 1/2;
+      grid-row: 1/2;
+   }
+   &__email {
+      grid-column: 2/3;
+      grid-row: 1/2;
+   }
+   &__area {
+      grid-column: 1/3;
+      grid-row: 2/3;
+      padding-top: 58px;
+   }
+
+   &__button {
+      grid-column: 1/3;
+      grid-row: 3/4;
+      justify-self: end;
+   }
+
+   &__input {
+      width: 100%;
+      height: 36px;
+      padding: 0 10px;
+   }
+
+   &__textarea {
+      resize: none;
+      width: 100%;
+      height: 119px;
+      padding: 10px;
+   }
+}
+
+.contact-info {
+   display: grid;
+   grid-template-columns: 245px;
+   grid-template-rows: 85px 30px 29px 40px;
+   row-gap: 13px;
+   &__text {
+      font-size: 14px;
+      color: rgb(0, 0, 0);
+      line-height: 26px;
+      text-align: left;
+      font-weight: 300;
+      margin-top: -5px;
+      font-weight: 300;
+   }
+
+   &__name {
+      text-align: left;
+      font-size: 14px;
+      color: rgb(0, 0, 0);
+      line-height: 26px;
+      font-weight: bold;
+   }
+
+   &__social-links {
+      display: flex;
+   }
+
+   &__social-link {
+      width: 29px;
+      height: 29px;
+      border: 2px solid #000000;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 12px;
+      img {
+         width: 15px;
+         height: 15px;
+      }
+   }
+
+   &__email-link {
+      font-size: 14px;
+      color: rgb(0, 0, 0);
+
+      font-weight: 300;
+      text-align: left;
+      a {
+         font-weight: bold;
+         color: rgb(0, 0, 0);
+      }
+   }
+}

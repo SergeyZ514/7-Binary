@@ -1,0 +1,25 @@
+.button {
+   display: inline-block;
+   border: 1px solid #ffffff;
+   background: transparent;
+   padding: 0 39px;
+   font-size: 16px;
+   color: rgb(255, 255, 255);
+   height: 47px;
+   line-height: 44px;
+   text-align: center;
+   letter-spacing: 0.06em;
+   transition: all 0.4s;
+   &:hover {
+      background: #ffffff;
+      color: #000000;
+   }
+   &_b {
+      color: #000000;
+      border-color: #000000;
+      &:hover {
+         background-color: #000000;
+         color: #ffffff;
+      }
+   }
+}

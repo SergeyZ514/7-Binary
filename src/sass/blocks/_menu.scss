@@ -1,0 +1,49 @@
+.menu {
+   height: 60px;
+   background-color: #ffffff;
+   border-bottom: 2px solid #f2f2f2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 10;
+   overflow: hidden;
+   transition: all 0.3s ease-in-out;
+
+   &__nav {
+   }
+
+   &__list {
+      width: 390px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__link {
+      font-size: 15px;
+      color: #3c3c3c;
+      font-weight: bold;
+      line-height: 18px;
+      transition: all 0.4s;
+      &:hover {
+         color: lighten($color: #3c3c3c, $amount: 30%);
+      }
+      &.active {
+         color: #ada074;
+         &:hover {
+            color: #ada074;
+         }
+      }
+   }
+}
+
+.sticky {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.45);
+}
+
+.sticky + .content {
+   padding-top: 60px;
+}

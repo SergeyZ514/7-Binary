@@ -1,0 +1,76 @@
+.portfolio {
+   text-align: center;
+   background-color: #f3f3f3;
+   padding: 100px 0 60px 0;
+   &__head {
+      margin-bottom: 123px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   &__title {
+   }
+
+   &__divider {
+      margin: 34px 0 34px 0;
+   }
+
+   &__nav {
+      padding: 0 10px;
+      width: 320px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__tab {
+      display: block;
+      font-size: 15px;
+      line-height: 40px;
+      color: #3c3c3c;
+      font-weight: bold;
+      &.active {
+         color: rgb(173, 160, 116);
+         &:hover {
+            color: rgb(173, 160, 116);
+            cursor: default;
+         }
+      }
+      &:hover {
+         color: lighten($color: #3c3c3c, $amount: 30%);
+         cursor: pointer;
+      }
+   }
+
+   &__row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 536px);
+      grid-template-rows: 363px;
+      grid-auto-rows: 363px;
+      row-gap: 18px;
+      column-gap: 28px;
+      margin: 0 auto;
+      justify-content: center;
+   }
+
+   &__item {
+      background-color: #eaeaea;
+      transition: all 0.5s;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      font-size: 28px;
+      line-height: 28px;
+      &:hover {
+         box-shadow: 0 0 15px rgba(0, 0, 0, 0.45);
+      }
+      &.active {
+         display: flex;
+      }
+   }
+
+   &__button {
+      margin-top: 65px;
+   }
+}

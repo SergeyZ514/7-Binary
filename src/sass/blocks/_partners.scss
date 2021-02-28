@@ -1,0 +1,33 @@
+.partners {
+   padding: 93px 0 107px 0;
+   background: url('../img/partners/partners_bg.jpg') bottom (center / cover)
+      no-repeat;
+   text-align: center;
+   &__title {
+      font-size: 30px;
+      color: #fff;
+      line-height: 36px;
+      font-weight: 300;
+      margin-bottom: 90px;
+      letter-spacing: 0.06em;
+   }
+
+   &__row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+   }
+
+   &__item {
+      margin-right: 110px;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+         filter: drop-shadow(0 0 5px white);
+      }
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+}

@@ -1,0 +1,37 @@
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/fonts';
+@import 'base/reset-styles';
+@import 'base/ui';
+
+.wrapper {
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.container {
+   max-width: 1100px;
+   margin: 0 auto;
+}
+
+.divider {
+   background-color: rgb(0, 0, 0);
+   width: 81px;
+   height: 1px;
+}
+
+.smooth {
+   scroll-behavior: smooth;
+}
+
+@import 'blocks/buttons';
+@import 'blocks/titles';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/about';
+@import 'blocks/portfolio';
+@import 'blocks/partners';
+@import 'blocks/contact';
+@import 'blocks/footer';
+@import 'blocks/media';
